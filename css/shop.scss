@@ -1,0 +1,12 @@
+$main-color: #83b735;
+$text-color:#000000;
+
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+.title-price h3 {
+    font-size: 1rem;
+}
