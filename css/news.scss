@@ -1,0 +1,132 @@
+$main-color: #83b735;
+$text-color:#000000;
+
+@import'shop.scss';
+@import 'news.scss';
+@import 'footer.scss';
+
+.new-container .box {
+    border-radius: 4px;
+}
+
+.new-container .box .box-img {
+    border-radius: 4px;
+}
+
+
+
+// About us
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    .about-img {
+
+        img {
+            width: 70%;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+    }
+
+    .about-text {
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $main-color;
+            margin-bottom: 1.3rem;
+            display: block;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+        }
+        p {
+            font-size: .9rem;
+            margin: 0.5rem 0 1.4rem;
+            line-height: 25px;
+            text-indent: 22px;
+        }
+
+        .btn {
+            padding: 18px 22px;
+            background: $main-color;
+            color: #fff;
+            border-radius: 0.3rem;
+            font-size: 24px;
+            margin-top: 1.6rem;
+            display: block;
+            width: 30%;
+        }
+    }
+}
+
+
+// Brands Company
+
+.brands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .brands-container { 
+
+        img {
+            width: 100px;
+            filter: grayscale(1);
+
+            &:hover {
+                width: 100px;
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+
+// NewsLetter Subscribe
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/newsletter-BG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        color: #fff;
+    }
+
+    .news-box {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+
+        .email {
+            width: 260px;
+            height: 44px;
+            border: none;
+            outline: none;
+            background: #fff;
+            padding: 10px;
+        }
+
+        .btn {
+            height: 44px;
+            padding: 11px;
+            border-radius: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: red;
+        }
+    }
+}

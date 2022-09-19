@@ -1,7 +1,72 @@
 $main-color: #83b735;
 $text-color:#000000;
 
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+.heading span {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $main-color;
+}
+.heading h2 {
+    font-size: 2.1em;
+    font-weight: 600;
+}
 
+// Shop Container
+.shop-container,
+.new-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.box {
+    position: relative;
+    border-radius: 44px 4px 4px 4px;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.2);
+}
+.box .box-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 44px 4px 0px 0px;
+}
+.box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.box .box-img img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.stars {
+    margin-bottom: 12px;
+}
+.stars .bx {
+    color: $main-color;
+}
+.box .bx-cart {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px 0 4px 0;
+    background: $main-color;
+}
+.box .bx-cart:hover {
+    background: #8fc53d;
+}
 .title-price {
     display: flex;
     justify-content: space-between;
@@ -9,4 +74,11 @@ $text-color:#000000;
 }
 .title-price h3 {
     font-size: 1rem;
+    font-weight: 600;
+}
+.box span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: $main-color
 }
