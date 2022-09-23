@@ -1,3 +1,6 @@
+@import url(/home/dev-maylon/PROJETOS REAIS PESSOAIS ATIVOS 2022 PORTF/ALREADY DOING PROJECTS -- SEPTEMBER 2022/Projeto Furniture Website  - CorponVenon                  DOING/css/shop.css);
+@import url(/home/dev-maylon/PROJETOS REAIS PESSOAIS ATIVOS 2022 PORTF/ALREADY DOING PROJECTS -- SEPTEMBER 2022/Projeto Furniture Website  - CorponVenon                  DOING/css/news.css);
+@import url(/home/dev-maylon/PROJETOS REAIS PESSOAIS ATIVOS 2022 PORTF/ALREADY DOING PROJECTS -- SEPTEMBER 2022/Projeto Furniture Website  - CorponVenon                  DOING/css/footer.css);
 .new-container .box {
   border-radius: 4px;
 }
@@ -126,6 +129,6 @@
   border-radius: 0;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: var(#83b735);
+  background-color: red;
 }
 /*# sourceMappingURL=news.css.map */
